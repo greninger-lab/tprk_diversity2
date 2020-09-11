@@ -1,3 +1,6 @@
+# Converts masked_constant_regions.fasta into a summary .csv similar to Table_allAAfilt_fullORFs.tsv,
+# but with the masked and colapsed regions.
+
 import subprocess
 import argparse
 import sys

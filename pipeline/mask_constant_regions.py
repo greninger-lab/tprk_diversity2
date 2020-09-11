@@ -1,3 +1,8 @@
+# Masks constant regions in full length sequences from unwrap.fasta, which can be generated from the following command: 
+# awk 'BEGIN {RS=">";FS="\n";OFS=""} NR>1 {print ">"$1; $1=""; print}' Isolates_aa_filt_fullORFs.aln.fasta > unwrap.fasta
+
+# Constant regions are found with fuzzy match based on length, and replaced with X's.
+
 import subprocess
 import argparse
 import sys

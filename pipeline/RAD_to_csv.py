@@ -1,3 +1,6 @@
+# Validates PacBio files with double-verified Illumina squared file by matching for each variable region.
+# Makes summary statistics file about what reads were thrown out/kept.
+
 import subprocess
 import argparse
 import sys

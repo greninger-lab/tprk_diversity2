@@ -1,3 +1,7 @@
+# Verifies that reads are contained in both Illumina preps at a mean rf of >0.1%.
+# Also makes Illumina_squared files for each individual sample.
+# Then validates PacBio files against Illumina files.
+
 list.of.packages <- c("optparse", "dplyr", "tidyr", "tibble", "foreach","iterators","doParallel")
 lapply(list.of.packages,library,character.only=T)
 

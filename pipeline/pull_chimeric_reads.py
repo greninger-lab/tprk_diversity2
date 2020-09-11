@@ -1,3 +1,5 @@
+# Checks for chimeric reads based on the clonal reads from AS10 and MI04 plasmids.
+
 import subprocess
 import argparse
 import sys

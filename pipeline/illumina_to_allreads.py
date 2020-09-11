@@ -1,3 +1,6 @@
+# Converts Illumina_validated_Illumina_allreads.csv to allreads_Illumina.csv, switching from 
+# DNA to amino acid level and retallying if necessary.
+
 import subprocess
 import argparse
 import sys

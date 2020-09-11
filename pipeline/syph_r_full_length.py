@@ -1,4 +1,5 @@
-# Syphilis Project
+# Syph_r, but for full length. Makes everything into "V1" (but is actually full length).
+
 import subprocess
 import argparse
 import sys
