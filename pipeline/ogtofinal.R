@@ -210,16 +210,16 @@ if (opt$pacbio == FALSE) {
 }
 
 #setwd("/Users/uwvirongs/Documents/Michelle/tprk_files/tprk_redo_five_billion_maybe_final/chinese_data")
-setwd('/Users/uwvirongs/Documents/Michelle/tprk_files/tprk_redo_five_billion_maybe_final')
-old_table <- read.table("allreads_illumina.csv", sep=',', header=TRUE)
-allreads <- read.table("allreads_chinesetrimmed_filtered.csv",sep=',',header=TRUE)
+#setwd('/Users/uwvirongs/Documents/Michelle/tprk_files/tprk_redo_five_billion_maybe_final')
+#old_table <- read.table("allreads_illumina.csv", sep=',', header=TRUE)
+#allreads <- read.table("allreads_chinesetrimmed_filtered.csv",sep=',',header=TRUE)
 #dunno <- cbind(old_table, allreads)
 #colnames(old_table)
-newtable <- full_join(old_table,allreads,by=c("Read","Region"))
+#newtable <- full_join(old_table,allreads,by=c("Read","Region"))
 
-old_table <- read.table("unchecked_Table_allAAfilt_fullORFs.tsv",header=T)
-new_table <- read.table("Table_allAAfilt_fullORFs.tsv",sep="\t",header=T)
-kms <- full_join(old_table,new_table,by=c("sample","sequences"))
+#old_table <- read.table("unchecked_Table_allAAfilt_fullORFs.tsv",header=T)
+#new_table <- read.table("Table_allAAfilt_fullORFs.tsv",sep="\t",header=T)
+#combined_table <- full_join(old_table,new_table,by=c("sample","sequences"))
 
 #newtable2 <- newtable[!with(newtable,is.na(PB_AS12old_RelativeFreq)& is.na(Ill_AS12_RelativeFreq)& 
 #                              is.na(PB_AS8old_RelativeFreq)& is.na(Ill_AS8_RelativeFreq)& 
